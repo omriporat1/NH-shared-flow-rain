@@ -1,0 +1,66 @@
+xarray_feature_scale:
+  coords: {}
+  attrs: {}
+  dims: {}
+  data_vars:
+    PRCP(mm/day)_maurer:
+      dims: []
+      attrs: {}
+      data: 6.2624664306640625
+    PRCP(mm/day)_nldas:
+      dims: []
+      attrs: {}
+      data: 7.045827865600586
+    QObs(mm/d):
+      dims: []
+      attrs: {}
+      data: 2.3460447788238525
+    prcp(mm/day)_daymet:
+      dims: []
+      attrs: {}
+      data: 7.472524642944336
+    tmax(C)_daymet:
+      dims: []
+      attrs: {}
+      data: 11.101509094238281
+    tmin(C)_daymet:
+      dims: []
+      attrs: {}
+      data: 10.794835090637207
+    vp(Pa)_daymet:
+      dims: []
+      attrs: {}
+      data: 541.7210083007812
+xarray_feature_center:
+  coords: {}
+  attrs: {}
+  dims: {}
+  data_vars:
+    PRCP(mm/day)_maurer:
+      dims: []
+      attrs: {}
+      data: 3.2725820541381836
+    PRCP(mm/day)_nldas:
+      dims: []
+      attrs: {}
+      data: 2.955144166946411
+    QObs(mm/d):
+      dims: []
+      attrs: {}
+      data: 1.8420768976211548
+    prcp(mm/day)_daymet:
+      dims: []
+      attrs: {}
+      data: 3.5325732231140137
+    tmax(C)_daymet:
+      dims: []
+      attrs: {}
+      data: 12.33018970489502
+    tmin(C)_daymet:
+      dims: []
+      attrs: {}
+      data: 0.9999014139175415
+    vp(Pa)_daymet:
+      dims: []
+      attrs: {}
+      data: 822.5563354492188

@@ -1,0 +1,57 @@
+2024-08-20 16:49:03,392: Logging to S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_164903\output.log initialized.
+2024-08-20 16:49:03,392: ### Folder structure created at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_164903
+2024-08-20 16:49:03,393: ### Run configurations for test_run
+2024-08-20 16:49:03,394: experiment_name: test_run
+2024-08-20 16:49:03,394: use_frequencies: ['60min', '1D']
+2024-08-20 16:49:03,395: train_basin_file: 1_basin.txt
+2024-08-20 16:49:03,396: validation_basin_file: 1_basin.txt
+2024-08-20 16:49:03,396: test_basin_file: 1_basin.txt
+2024-08-20 16:49:03,397: train_start_date: 1999-10-01 00:00:00
+2024-08-20 16:49:03,398: train_end_date: 2008-09-30 00:00:00
+2024-08-20 16:49:03,398: validation_start_date: 1996-10-01 00:00:00
+2024-08-20 16:49:03,399: validation_end_date: 1999-09-30 00:00:00
+2024-08-20 16:49:03,400: test_start_date: 1989-10-01 00:00:00
+2024-08-20 16:49:03,401: test_end_date: 1996-09-30 00:00:00
+2024-08-20 16:49:03,402: device: cpu
+2024-08-20 16:49:03,402: validate_every: 5
+2024-08-20 16:49:03,403: validate_n_random_basins: 1
+2024-08-20 16:49:03,403: metrics: ['NSE']
+2024-08-20 16:49:03,404: model: mtslstm
+2024-08-20 16:49:03,405: shared_mtslstm: False
+2024-08-20 16:49:03,406: transfer_mtslstm_states: {'h': 'linear', 'c': 'linear'}
+2024-08-20 16:49:03,406: head: regression
+2024-08-20 16:49:03,407: output_activation: linear
+2024-08-20 16:49:03,408: hidden_size: 20
+2024-08-20 16:49:03,408: initial_forget_bias: 3
+2024-08-20 16:49:03,409: output_dropout: 0.4
+2024-08-20 16:49:03,409: optimizer: Adam
+2024-08-20 16:49:03,410: loss: MSE
+2024-08-20 16:49:03,411: regularization: ['tie_frequencies']
+2024-08-20 16:49:03,411: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2024-08-20 16:49:03,412: batch_size: 256
+2024-08-20 16:49:03,413: epochs: 50
+2024-08-20 16:49:03,413: clip_gradient_norm: 1
+2024-08-20 16:49:03,414: predict_last_n: {'1D': 1, '60min': 24}
+2024-08-20 16:49:03,415: seq_length: {'1D': 365, '60min': 336}
+2024-08-20 16:49:03,417: num_workers: 0
+2024-08-20 16:49:03,417: log_interval: 5
+2024-08-20 16:49:03,418: log_tensorboard: False
+2024-08-20 16:49:03,419: log_n_figures: 0
+2024-08-20 16:49:03,419: save_weights_every: 1
+2024-08-20 16:49:03,420: dataset: hourly_camels_us
+2024-08-20 16:49:03,421: data_dir: ..\..\..\..\data\CAMELS_US
+2024-08-20 16:49:03,422: forcings: ['nldas_hourly', 'daymet']
+2024-08-20 16:49:03,423: dynamic_inputs: {'1D': ['prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet'], '60min': ['convective_fraction_nldas_hourly', 'longwave_radiation_nldas_hourly', 'potential_energy_nldas_hourly', 'potential_evaporation_nldas_hourly', 'pressure_nldas_hourly', 'shortwave_radiation_nldas_hourly', 'specific_humidity_nldas_hourly', 'temperature_nldas_hourly', 'total_precipitation_nldas_hourly', 'wind_u_nldas_hourly', 'wind_v_nldas_hourly', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']}
+2024-08-20 16:49:03,423: target_variables: ['qobs_mm_per_hour']
+2024-08-20 16:49:03,424: clip_targets_to_zero: ['qobs_mm_per_hour']
+2024-08-20 16:49:03,424: number_of_basins: 1
+2024-08-20 16:49:03,425: run_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_164903
+2024-08-20 16:49:03,426: train_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_164903\train_data
+2024-08-20 16:49:03,428: img_log_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_164903\img_log
+2024-08-20 16:49:03,477: ### Device cpu will be used for training
+2024-08-20 16:49:03,481: Loading basin data into xarray data set.
+2024-08-20 16:49:05,116: Create lookup table and convert to pytorch tensor
+2024-08-20 16:49:07,405: No specific hidden size for frequencies are specified. Same hidden size is used for all.
+2024-08-20 16:49:10,314: Epoch 1 average loss: avg_loss: 0.84581, avg_tie_frequencies: 0.05178, avg_total_loss: 0.89758
+2024-08-20 16:49:11,262: Epoch 2 average loss: avg_loss: 0.68315, avg_tie_frequencies: 0.04970, avg_total_loss: 0.73286
+2024-08-20 16:49:12,271: Epoch 3 average loss: avg_loss: 0.53862, avg_tie_frequencies: 0.05722, avg_total_loss: 0.59584

@@ -1,0 +1,61 @@
+batch_size: 256
+clip_gradient_norm: 1
+clip_targets_to_zero:
+- QObs(mm/d)
+data_dir: C:\Data\CAMELS_US
+dataset: camels_us
+device: cpu
+dynamic_inputs:
+- PRCP(mm/day)_nldas
+- PRCP(mm/day)_maurer
+- prcp(mm/day)_daymet
+- srad(W/m2)_daymet
+- tmax(C)_daymet
+- tmin(C)_daymet
+- vp(Pa)_daymet
+epochs: 50
+experiment_name: test_run2
+forcings:
+- maurer
+- daymet
+- nldas
+head: regression
+hidden_size: 20
+img_log_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539\img_log
+initial_forget_bias: 3
+learning_rate:
+  0: 0.01
+  30: 0.005
+  40: 0.001
+log_interval: 5
+log_n_figures: 1
+log_tensorboard: true
+loss: MSE
+metrics:
+- NSE
+model: cudalstm
+num_workers: 8
+number_of_basins: 1
+optimizer: Adam
+output_activation: linear
+output_dropout: 0.4
+package_version: 1.10.0
+predict_last_n: 1
+run_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539
+save_weights_every: 1
+seed: 690874
+seq_length: 365
+target_variables:
+- QObs(mm/d)
+test_basin_file: 1_basin.txt
+test_end_date: 30/09/1999
+test_start_date: 01/10/1989
+train_basin_file: 1_basin.txt
+train_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539\train_data
+train_end_date: 30/09/2008
+train_start_date: 01/10/1999
+validate_every: 3
+validate_n_random_basins: 1
+validation_basin_file: 1_basin.txt
+validation_end_date: 30/09/1989
+validation_start_date: 01/10/1980

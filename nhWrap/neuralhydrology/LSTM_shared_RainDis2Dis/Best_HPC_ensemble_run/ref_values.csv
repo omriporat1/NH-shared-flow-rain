@@ -1,0 +1,457 @@
+,NSE,MSE,RMSE,KGE,Alpha-NSE,Beta-KGE,Beta-NSE,Pearson-r,FHV,FMS,FLV,Peak-Timing,Missed-Peaks,Peak-MAPE,Peak-time-discharge
+il_14120,0.7800335735082626,19.868932723999023,4.4574581012051055,0.8900166099421842,0.999998494856775,1.0000982284545898,1.1238402746023436e-05,0.8900166538174306,0.0,0.0,-0.4635438729529196,17.857142857142858,0.0,61.68236051286969,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(81.98, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T16:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(9.719999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-14T23:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(24.25, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T17:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(222.21999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T22:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(14.08, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T11:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(99.840004, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T01:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(16., dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T08:20:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(81.98, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T19:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(9.719999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-15T02:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(24.25, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T20:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(222.21999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T01:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(14.08, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T14:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(99.840004, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T04:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(16., dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T11:10:00
+    time_step  int64 0]}"
+il_15120,0.8584516197443008,4.28510046005249,2.0700484197362368,0.9292258040801803,1.0000002600026712,1.0000039339065552,5.416722314460577e-07,0.9292258041899888,0.0,0.0,-0.0030921861350282696,25.714285714285715,0.0,58.718170438494,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(31.480001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T13:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(29.702, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T15:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(104., dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T23:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(14.17, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T16:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(13.662999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T12:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(45.75, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T03:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(8.344, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T09:50:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(31.480001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T16:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(29.702, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T18:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(104., dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T02:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(94.416664, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T04:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(13.662999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T15:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(45.75, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T06:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(8.344, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T12:50:00
+    time_step  int64 0]}"
+il_19160,0.36246639490127563,0.0001010015475912951,0.010049952616370641,0.6812332329236441,0.9999999260122778,1.0000001192092896,4.624232636339395e-09,0.681233232923675,0.0,,,18.0,0.0,85.00000238418579,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.072, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T10:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.5, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T03:00:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.072, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T13:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.5, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T06:00:00
+    time_step  int64 0]}"
+il_2105,0.7311680912971497,0.0809258222579956,0.2844746425571102,0.8655840344638159,1.0000004347155584,1.0000001192092896,1.3584861204559862e-08,0.8655840344645718,0.0,0.0,-0.0,18.0,0.0,97.2684919834137,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(4.36, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T21:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(12., dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T01:30:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(4.36, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-06
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(12., dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T04:30:00
+    time_step  int64 0]}"
+il_30170,0.5213034152984619,0.014672658406198025,0.12113074921834681,0.7606516970770685,1.0000004256824435,1.0,0.0,0.7606516970774471,0.0,0.0,-0.0,17.6,0.0,67.75031089782715,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.292, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T16:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.105, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T09:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.433, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T21:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(3.6739998, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T14:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.042, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T04:10:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.292, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T19:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.105, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T12:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.433, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T00:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(3.6739998, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T17:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.042, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T07:10:00
+    time_step  int64 0]}"
+il_4110,0.8496777415275574,0.0036764771211892366,0.06063396013117762,0.9248418040147663,1.0000349702557487,0.9998307824134827,-0.00011443944728700852,0.9248420026461294,0.0,0.011568966349532559,0.16842222280217103,17.38888888888889,0.0,53.55307261149088,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.267, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2017-10-16T14:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.666, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-01T07:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.3949999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T11:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.03, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-14T22:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.49799997, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-17T15:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.60999995, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T02:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.41399997, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-23T09:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.592, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T23:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.92, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T16:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.58199996, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T13:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.3949999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-17T08:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.946, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T01:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.58199996, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T08:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.267, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-03-14T13:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.267, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-03-16T07:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.203, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-04-10T07:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.203, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-04-11T17:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.46999997, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-05-08T13:30:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.267, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2017-10-16T17:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.666, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-01T10:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.3949999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T14:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.03, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-15T01:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.49799997, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-17T18:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.60999995, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T05:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.41399997, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-23T12:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.592, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T02:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.0879998, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T10:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.58199996, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T16:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.3949999, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-17T11:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.946, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T04:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.32999998, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T08:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.267, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-03-14T16:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.267, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-03-16T09:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.203, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-04-10T09:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.203, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-04-11T20:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(0.46999997, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-05-08T16:30:00
+    time_step  int64 0]}"
+il_8146,0.7386394441127777,1.8042250871658325,1.343214460600329,0.8693204174049627,1.000007622429143,0.9999246597290039,-2.1301967158401063e-05,0.869320439345109,0.0,0.0,0.3100856228543552,18.0,0.0,38.59748840332031,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(18.380001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T18:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(3.304, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-23T12:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(10.030001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T22:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(71.645004, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T18:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(16.300001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T18:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(14.76, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T02:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(4.296, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T12:50:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(18.380001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T21:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(3.304, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-23T15:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(10.030001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T01:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(71.645004, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T21:40:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(16.300001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-27T21:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(14.76, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T05:50:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(4.296, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T15:50:00
+    time_step  int64 0]}"
+il_8155,0.9293100386857986,0.03270239382982254,0.18083803203370286,0.9646552969951513,1.0000404011828694,0.9997441172599792,-0.00011971370021638734,0.9646562463472151,0.0,0.14766327784732006,0.09508092576432958,17.875,0.0,41.94570183753967,"{'Observed': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(5.178, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T19:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.165, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T04:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.688, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T20:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(9.315, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T18:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.8670001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T12:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(7.34, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T03:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.3400002, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-22T11:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.804, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T10:30:00
+    time_step  int64 0], 'Simulated': [<xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(5.178, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-05T22:20:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.165, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-19T07:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.688, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-25T23:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(9.315, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-01-26T21:10:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.8670001, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-13T15:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(7.34, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-18T06:30:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(1.3400002, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-22T14:00:00
+    time_step  int64 0, <xarray.DataArray 'Flow_m3_sec_zscore_norm_obs' ()>
+array(2.804, dtype=float32)
+Coordinates:
+    date       datetime64[ns] 2018-02-27T13:30:00
+    time_step  int64 0]}"

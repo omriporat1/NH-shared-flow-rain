@@ -1,0 +1,120 @@
+2024-08-20 16:51:00,024: Logging to S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_165100\output.log initialized.
+2024-08-20 16:51:00,026: ### Folder structure created at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_165100
+2024-08-20 16:51:00,026: ### Run configurations for test_run
+2024-08-20 16:51:00,027: experiment_name: test_run
+2024-08-20 16:51:00,029: use_frequencies: ['60min', '1D']
+2024-08-20 16:51:00,030: train_basin_file: 1_basin.txt
+2024-08-20 16:51:00,031: validation_basin_file: 1_basin.txt
+2024-08-20 16:51:00,032: test_basin_file: 1_basin.txt
+2024-08-20 16:51:00,032: train_start_date: 1999-10-01 00:00:00
+2024-08-20 16:51:00,033: train_end_date: 2008-09-30 00:00:00
+2024-08-20 16:51:00,034: validation_start_date: 1996-10-01 00:00:00
+2024-08-20 16:51:00,035: validation_end_date: 1999-09-30 00:00:00
+2024-08-20 16:51:00,036: test_start_date: 1989-10-01 00:00:00
+2024-08-20 16:51:00,036: test_end_date: 1996-09-30 00:00:00
+2024-08-20 16:51:00,037: device: cpu
+2024-08-20 16:51:00,038: validate_every: 5
+2024-08-20 16:51:00,038: validate_n_random_basins: 1
+2024-08-20 16:51:00,039: metrics: ['NSE']
+2024-08-20 16:51:00,040: model: mtslstm
+2024-08-20 16:51:00,041: shared_mtslstm: False
+2024-08-20 16:51:00,041: transfer_mtslstm_states: {'h': 'linear', 'c': 'linear'}
+2024-08-20 16:51:00,042: head: regression
+2024-08-20 16:51:00,043: output_activation: linear
+2024-08-20 16:51:00,044: hidden_size: 20
+2024-08-20 16:51:00,044: initial_forget_bias: 3
+2024-08-20 16:51:00,045: output_dropout: 0.4
+2024-08-20 16:51:00,046: optimizer: Adam
+2024-08-20 16:51:00,046: loss: MSE
+2024-08-20 16:51:00,047: regularization: ['tie_frequencies']
+2024-08-20 16:51:00,048: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2024-08-20 16:51:00,048: batch_size: 256
+2024-08-20 16:51:00,049: epochs: 50
+2024-08-20 16:51:00,050: clip_gradient_norm: 1
+2024-08-20 16:51:00,050: predict_last_n: {'1D': 1, '60min': 24}
+2024-08-20 16:51:00,052: seq_length: {'1D': 365, '60min': 336}
+2024-08-20 16:51:00,053: num_workers: 0
+2024-08-20 16:51:00,053: log_interval: 5
+2024-08-20 16:51:00,054: log_tensorboard: False
+2024-08-20 16:51:00,054: log_n_figures: 0
+2024-08-20 16:51:00,055: save_weights_every: 1
+2024-08-20 16:51:00,056: dataset: hourly_camels_us
+2024-08-20 16:51:00,057: data_dir: ..\..\..\..\data\CAMELS_US
+2024-08-20 16:51:00,057: forcings: ['nldas_hourly', 'daymet']
+2024-08-20 16:51:00,058: dynamic_inputs: {'1D': ['prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet'], '60min': ['convective_fraction_nldas_hourly', 'longwave_radiation_nldas_hourly', 'potential_energy_nldas_hourly', 'potential_evaporation_nldas_hourly', 'pressure_nldas_hourly', 'shortwave_radiation_nldas_hourly', 'specific_humidity_nldas_hourly', 'temperature_nldas_hourly', 'total_precipitation_nldas_hourly', 'wind_u_nldas_hourly', 'wind_v_nldas_hourly', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']}
+2024-08-20 16:51:00,059: target_variables: ['qobs_mm_per_hour']
+2024-08-20 16:51:00,060: clip_targets_to_zero: ['qobs_mm_per_hour']
+2024-08-20 16:51:00,060: number_of_basins: 1
+2024-08-20 16:51:00,061: run_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_165100
+2024-08-20 16:51:00,062: train_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_165100\train_data
+2024-08-20 16:51:00,062: img_log_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T4\runs\test_run_2008_165100\img_log
+2024-08-20 16:51:00,111: ### Device cpu will be used for training
+2024-08-20 16:51:00,115: Loading basin data into xarray data set.
+2024-08-20 16:51:00,858: Create lookup table and convert to pytorch tensor
+2024-08-20 16:51:03,124: No specific hidden size for frequencies are specified. Same hidden size is used for all.
+2024-08-20 16:51:06,306: Epoch 1 average loss: avg_loss: 0.79582, avg_tie_frequencies: 0.07086, avg_total_loss: 0.86667
+2024-08-20 16:51:07,249: Epoch 2 average loss: avg_loss: 0.58176, avg_tie_frequencies: 0.06523, avg_total_loss: 0.64698
+2024-08-20 16:51:08,298: Epoch 3 average loss: avg_loss: 0.46922, avg_tie_frequencies: 0.07952, avg_total_loss: 0.54874
+2024-08-20 16:51:09,236: Epoch 4 average loss: avg_loss: 0.43872, avg_tie_frequencies: 0.08854, avg_total_loss: 0.52726
+2024-08-20 16:51:10,202: Epoch 5 average loss: avg_loss: 0.37697, avg_tie_frequencies: 0.07615, avg_total_loss: 0.45312
+2024-08-20 16:51:11,671: Epoch 5 average validation loss: 0.42344 -- Median validation metrics: avg_loss: 0.32459, avg_tie_frequencies: 0.09884, NSE_60min: 0.32382, NSE_1D: 0.55697
+2024-08-20 16:51:12,538: Epoch 6 average loss: avg_loss: 0.35131, avg_tie_frequencies: 0.08113, avg_total_loss: 0.43244
+2024-08-20 16:51:13,471: Epoch 7 average loss: avg_loss: 0.31956, avg_tie_frequencies: 0.07338, avg_total_loss: 0.39294
+2024-08-20 16:51:14,429: Epoch 8 average loss: avg_loss: 0.30222, avg_tie_frequencies: 0.06869, avg_total_loss: 0.37091
+2024-08-20 16:51:15,363: Epoch 9 average loss: avg_loss: 0.27981, avg_tie_frequencies: 0.06363, avg_total_loss: 0.34344
+2024-08-20 16:51:16,351: Epoch 10 average loss: avg_loss: 0.26978, avg_tie_frequencies: 0.07788, avg_total_loss: 0.34766
+2024-08-20 16:51:16,943: Epoch 10 average validation loss: 0.33154 -- Median validation metrics: avg_loss: 0.25484, avg_tie_frequencies: 0.07670, NSE_60min: 0.55331, NSE_1D: 0.60778
+2024-08-20 16:51:17,903: Epoch 11 average loss: avg_loss: 0.26674, avg_tie_frequencies: 0.07914, avg_total_loss: 0.34588
+2024-08-20 16:51:18,897: Epoch 12 average loss: avg_loss: 0.23384, avg_tie_frequencies: 0.06950, avg_total_loss: 0.30334
+2024-08-20 16:51:19,881: Epoch 13 average loss: avg_loss: 0.24123, avg_tie_frequencies: 0.07196, avg_total_loss: 0.31319
+2024-08-20 16:51:20,893: Epoch 14 average loss: avg_loss: 0.23947, avg_tie_frequencies: 0.06411, avg_total_loss: 0.30358
+2024-08-20 16:51:21,845: Epoch 15 average loss: avg_loss: 0.21211, avg_tie_frequencies: 0.06353, avg_total_loss: 0.27564
+2024-08-20 16:51:22,282: Epoch 15 average validation loss: 0.25056 -- Median validation metrics: avg_loss: 0.19514, avg_tie_frequencies: 0.05542, NSE_60min: 0.65023, NSE_1D: 0.69672
+2024-08-20 16:51:23,350: Epoch 16 average loss: avg_loss: 0.19645, avg_tie_frequencies: 0.06446, avg_total_loss: 0.26091
+2024-08-20 16:51:24,398: Epoch 17 average loss: avg_loss: 0.20464, avg_tie_frequencies: 0.06210, avg_total_loss: 0.26674
+2024-08-20 16:51:25,464: Epoch 18 average loss: avg_loss: 0.19513, avg_tie_frequencies: 0.07163, avg_total_loss: 0.26676
+2024-08-20 16:51:26,551: Epoch 19 average loss: avg_loss: 0.18191, avg_tie_frequencies: 0.06526, avg_total_loss: 0.24717
+2024-08-20 16:51:27,547: Epoch 20 average loss: avg_loss: 0.17095, avg_tie_frequencies: 0.06283, avg_total_loss: 0.23377
+2024-08-20 16:51:27,927: Epoch 20 average validation loss: 0.27639 -- Median validation metrics: avg_loss: 0.21496, avg_tie_frequencies: 0.06143, NSE_60min: 0.63950, NSE_1D: 0.70996
+2024-08-20 16:51:28,873: Epoch 21 average loss: avg_loss: 0.17915, avg_tie_frequencies: 0.06235, avg_total_loss: 0.24150
+2024-08-20 16:51:29,852: Epoch 22 average loss: avg_loss: 0.17815, avg_tie_frequencies: 0.06483, avg_total_loss: 0.24299
+2024-08-20 16:51:30,869: Epoch 23 average loss: avg_loss: 0.17136, avg_tie_frequencies: 0.07388, avg_total_loss: 0.24524
+2024-08-20 16:51:31,872: Epoch 24 average loss: avg_loss: 0.16943, avg_tie_frequencies: 0.07467, avg_total_loss: 0.24410
+2024-08-20 16:51:32,840: Epoch 25 average loss: avg_loss: 0.16672, avg_tie_frequencies: 0.06111, avg_total_loss: 0.22783
+2024-08-20 16:51:33,473: Epoch 25 average validation loss: 0.39714 -- Median validation metrics: avg_loss: 0.30623, avg_tie_frequencies: 0.09091, NSE_60min: 0.54160, NSE_1D: 0.65883
+2024-08-20 16:51:34,437: Epoch 26 average loss: avg_loss: 0.16818, avg_tie_frequencies: 0.07037, avg_total_loss: 0.23855
+2024-08-20 16:51:35,415: Epoch 27 average loss: avg_loss: 0.15563, avg_tie_frequencies: 0.06411, avg_total_loss: 0.21973
+2024-08-20 16:51:36,399: Epoch 28 average loss: avg_loss: 0.15270, avg_tie_frequencies: 0.06022, avg_total_loss: 0.21293
+2024-08-20 16:51:37,369: Epoch 29 average loss: avg_loss: 0.13572, avg_tie_frequencies: 0.06019, avg_total_loss: 0.19591
+2024-08-20 16:51:37,406: Setting learning rate to 0.005
+2024-08-20 16:51:38,376: Epoch 30 average loss: avg_loss: 0.14313, avg_tie_frequencies: 0.06167, avg_total_loss: 0.20480
+2024-08-20 16:51:39,002: Epoch 30 average validation loss: 0.31603 -- Median validation metrics: avg_loss: 0.23243, avg_tie_frequencies: 0.08360, NSE_60min: 0.57525, NSE_1D: 0.69336
+2024-08-20 16:51:39,996: Epoch 31 average loss: avg_loss: 0.14042, avg_tie_frequencies: 0.05630, avg_total_loss: 0.19672
+2024-08-20 16:51:41,063: Epoch 32 average loss: avg_loss: 0.13599, avg_tie_frequencies: 0.05878, avg_total_loss: 0.19477
+2024-08-20 16:51:42,127: Epoch 33 average loss: avg_loss: 0.13556, avg_tie_frequencies: 0.05718, avg_total_loss: 0.19274
+2024-08-20 16:51:43,744: Epoch 34 average loss: avg_loss: 0.13606, avg_tie_frequencies: 0.06125, avg_total_loss: 0.19731
+2024-08-20 16:51:44,910: Epoch 35 average loss: avg_loss: 0.14017, avg_tie_frequencies: 0.05845, avg_total_loss: 0.19863
+2024-08-20 16:51:45,453: Epoch 35 average validation loss: 0.33792 -- Median validation metrics: avg_loss: 0.23453, avg_tie_frequencies: 0.10339, NSE_60min: 0.54877, NSE_1D: 0.72210
+2024-08-20 16:51:46,520: Epoch 36 average loss: avg_loss: 0.13129, avg_tie_frequencies: 0.05920, avg_total_loss: 0.19049
+2024-08-20 16:51:47,605: Epoch 37 average loss: avg_loss: 0.12410, avg_tie_frequencies: 0.05750, avg_total_loss: 0.18160
+2024-08-20 16:51:48,703: Epoch 38 average loss: avg_loss: 0.12545, avg_tie_frequencies: 0.05796, avg_total_loss: 0.18341
+2024-08-20 16:51:49,813: Epoch 39 average loss: avg_loss: 0.13054, avg_tie_frequencies: 0.05559, avg_total_loss: 0.18613
+2024-08-20 16:51:49,850: Setting learning rate to 0.001
+2024-08-20 16:51:50,921: Epoch 40 average loss: avg_loss: 0.12286, avg_tie_frequencies: 0.05402, avg_total_loss: 0.17688
+2024-08-20 16:51:51,516: Epoch 40 average validation loss: 0.29525 -- Median validation metrics: avg_loss: 0.22338, avg_tie_frequencies: 0.07186, NSE_60min: 0.62272, NSE_1D: 0.68867
+2024-08-20 16:51:52,513: Epoch 41 average loss: avg_loss: 0.11674, avg_tie_frequencies: 0.05102, avg_total_loss: 0.16776
+2024-08-20 16:51:53,612: Epoch 42 average loss: avg_loss: 0.11805, avg_tie_frequencies: 0.04977, avg_total_loss: 0.16782
+2024-08-20 16:51:54,706: Epoch 43 average loss: avg_loss: 0.12167, avg_tie_frequencies: 0.05385, avg_total_loss: 0.17552
+2024-08-20 16:51:55,785: Epoch 44 average loss: avg_loss: 0.11898, avg_tie_frequencies: 0.04874, avg_total_loss: 0.16771
+2024-08-20 16:51:56,956: Epoch 45 average loss: avg_loss: 0.11221, avg_tie_frequencies: 0.05183, avg_total_loss: 0.16405
+2024-08-20 16:51:57,573: Epoch 45 average validation loss: 0.29424 -- Median validation metrics: avg_loss: 0.22102, avg_tie_frequencies: 0.07322, NSE_60min: 0.62331, NSE_1D: 0.70004
+2024-08-20 16:51:58,597: Epoch 46 average loss: avg_loss: 0.11769, avg_tie_frequencies: 0.05064, avg_total_loss: 0.16833
+2024-08-20 16:51:59,705: Epoch 47 average loss: avg_loss: 0.11382, avg_tie_frequencies: 0.04994, avg_total_loss: 0.16376
+2024-08-20 16:52:00,816: Epoch 48 average loss: avg_loss: 0.11601, avg_tie_frequencies: 0.04686, avg_total_loss: 0.16287
+2024-08-20 16:52:01,902: Epoch 49 average loss: avg_loss: 0.11560, avg_tie_frequencies: 0.04965, avg_total_loss: 0.16525
+2024-08-20 16:52:02,974: Epoch 50 average loss: avg_loss: 0.11758, avg_tie_frequencies: 0.05101, avg_total_loss: 0.16859
+2024-08-20 16:52:03,689: Epoch 50 average validation loss: 0.30139 -- Median validation metrics: avg_loss: 0.22508, avg_tie_frequencies: 0.07631, NSE_60min: 0.62169, NSE_1D: 0.69212
+2024-08-20 16:54:38,871: No specific hidden size for frequencies are specified. Same hidden size is used for all.
+2024-08-20 16:54:45,763: Using the model weights from runs\test_run_2008_165100\model_epoch050.pt
+2024-08-20 16:56:02,303: No specific hidden size for frequencies are specified. Same hidden size is used for all.
+2024-08-20 16:56:08,013: Using the model weights from runs\test_run_2008_165100\model_epoch050.pt

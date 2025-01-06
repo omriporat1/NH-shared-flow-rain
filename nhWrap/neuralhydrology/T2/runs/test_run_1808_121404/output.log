@@ -1,0 +1,49 @@
+2024-08-18 12:14:04,423: Logging to S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T2\runs\test_run_1808_121404\output.log initialized.
+2024-08-18 12:14:04,424: ### Folder structure created at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T2\runs\test_run_1808_121404
+2024-08-18 12:14:04,425: ### Run configurations for test_run
+2024-08-18 12:14:04,426: experiment_name: test_run
+2024-08-18 12:14:04,426: train_basin_file: 1_basin_T2.txt
+2024-08-18 12:14:04,428: validation_basin_file: 1_basin_T2.txt
+2024-08-18 12:14:04,428: test_basin_file: 1_basin_T2.txt
+2024-08-18 12:14:04,429: train_start_date: 1999-10-01 00:00:00
+2024-08-18 12:14:04,430: train_end_date: 2008-09-30 00:00:00
+2024-08-18 12:14:04,431: validation_start_date: 1980-10-01 00:00:00
+2024-08-18 12:14:04,432: validation_end_date: 1989-09-30 00:00:00
+2024-08-18 12:14:04,433: test_start_date: 1989-10-01 00:00:00
+2024-08-18 12:14:04,434: test_end_date: 1999-09-30 00:00:00
+2024-08-18 12:14:04,434: device: cpu
+2024-08-18 12:14:04,435: validate_every: 3
+2024-08-18 12:14:04,437: validate_n_random_basins: 1
+2024-08-18 12:14:04,438: metrics: ['NSE']
+2024-08-18 12:14:04,439: model: gru
+2024-08-18 12:14:04,440: head: regression
+2024-08-18 12:14:04,441: output_activation: linear
+2024-08-18 12:14:04,442: hidden_size: 20
+2024-08-18 12:14:04,443: initial_forget_bias: 3
+2024-08-18 12:14:04,444: output_dropout: 0.4
+2024-08-18 12:14:04,444: optimizer: Adam
+2024-08-18 12:14:04,445: loss: MSE
+2024-08-18 12:14:04,446: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2024-08-18 12:14:04,447: batch_size: 256
+2024-08-18 12:14:04,448: epochs: 50
+2024-08-18 12:14:04,449: clip_gradient_norm: 1
+2024-08-18 12:14:04,450: predict_last_n: 1
+2024-08-18 12:14:04,451: seq_length: 365
+2024-08-18 12:14:04,452: num_workers: 8
+2024-08-18 12:14:04,453: log_interval: 5
+2024-08-18 12:14:04,454: log_tensorboard: True
+2024-08-18 12:14:04,455: log_n_figures: 1
+2024-08-18 12:14:04,456: save_weights_every: 1
+2024-08-18 12:14:04,457: dataset: camels_us
+2024-08-18 12:14:04,459: data_dir: ..\..\..\..\data\CAMELS_US
+2024-08-18 12:14:04,460: forcings: ['maurer', 'daymet', 'nldas']
+2024-08-18 12:14:04,462: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2024-08-18 12:14:04,463: target_variables: ['QObs(mm/d)']
+2024-08-18 12:14:04,464: clip_targets_to_zero: ['QObs(mm/d)']
+2024-08-18 12:14:04,465: number_of_basins: 1
+2024-08-18 12:14:04,466: run_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T2\runs\test_run_1808_121404
+2024-08-18 12:14:04,467: train_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T2\runs\test_run_1808_121404\train_data
+2024-08-18 12:14:04,468: img_log_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T2\runs\test_run_1808_121404\img_log
+2024-08-18 12:14:04,529: ### Device cpu will be used for training
+2024-08-18 12:14:04,531: Loading basin data into xarray data set.
+2024-08-18 12:14:05,074: Create lookup table and convert to pytorch tensor

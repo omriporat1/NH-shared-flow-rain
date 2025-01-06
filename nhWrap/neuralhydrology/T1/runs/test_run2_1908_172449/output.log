@@ -1,0 +1,93 @@
+2024-08-19 17:24:49,407: Logging to S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449\output.log initialized.
+2024-08-19 17:24:49,408: ### Folder structure created at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449
+2024-08-19 17:24:49,409: ### Run configurations for test_run2
+2024-08-19 17:24:49,410: experiment_name: test_run2
+2024-08-19 17:24:49,411: train_basin_file: 1_basin.txt
+2024-08-19 17:24:49,412: validation_basin_file: 1_basin.txt
+2024-08-19 17:24:49,413: test_basin_file: 1_basin.txt
+2024-08-19 17:24:49,414: train_start_date: 1999-10-01 00:00:00
+2024-08-19 17:24:49,415: train_end_date: 2008-09-30 00:00:00
+2024-08-19 17:24:49,416: validation_start_date: 1980-10-01 00:00:00
+2024-08-19 17:24:49,417: validation_end_date: 1989-09-30 00:00:00
+2024-08-19 17:24:49,418: test_start_date: 1989-10-01 00:00:00
+2024-08-19 17:24:49,418: test_end_date: 1999-09-30 00:00:00
+2024-08-19 17:24:49,419: device: cpu
+2024-08-19 17:24:49,420: validate_every: 3
+2024-08-19 17:24:49,421: validate_n_random_basins: 1
+2024-08-19 17:24:49,423: metrics: ['NSE']
+2024-08-19 17:24:49,424: model: cudalstm
+2024-08-19 17:24:49,425: head: regression
+2024-08-19 17:24:49,426: output_activation: linear
+2024-08-19 17:24:49,427: hidden_size: 20
+2024-08-19 17:24:49,428: initial_forget_bias: 3
+2024-08-19 17:24:49,428: output_dropout: 0.4
+2024-08-19 17:24:49,429: optimizer: Adam
+2024-08-19 17:24:49,430: loss: MSE
+2024-08-19 17:24:49,431: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2024-08-19 17:24:49,432: batch_size: 256
+2024-08-19 17:24:49,433: epochs: 30
+2024-08-19 17:24:49,434: clip_gradient_norm: 1
+2024-08-19 17:24:49,435: predict_last_n: 1
+2024-08-19 17:24:49,437: seq_length: 365
+2024-08-19 17:24:49,437: num_workers: 8
+2024-08-19 17:24:49,438: log_interval: 5
+2024-08-19 17:24:49,439: log_tensorboard: True
+2024-08-19 17:24:49,440: log_n_figures: 1
+2024-08-19 17:24:49,441: save_weights_every: 1
+2024-08-19 17:24:49,441: dataset: camels_us
+2024-08-19 17:24:49,442: data_dir: C:\Data\CAMELS_US
+2024-08-19 17:24:49,443: forcings: ['maurer', 'daymet', 'nldas']
+2024-08-19 17:24:49,444: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2024-08-19 17:24:49,445: target_variables: ['QObs(mm/d)']
+2024-08-19 17:24:49,446: clip_targets_to_zero: ['QObs(mm/d)']
+2024-08-19 17:24:49,447: number_of_basins: 3
+2024-08-19 17:24:49,447: run_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449
+2024-08-19 17:24:49,448: train_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449\train_data
+2024-08-19 17:24:49,449: img_log_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449\img_log
+2024-08-19 17:24:49,473: ### Device cpu will be used for training
+2024-08-19 17:24:49,476: Loading basin data into xarray data set.
+2024-08-19 17:24:50,066: Create lookup table and convert to pytorch tensor
+2024-08-19 17:25:45,991: Epoch 1 average loss: avg_loss: 0.28485, avg_total_loss: 0.28485
+2024-08-19 17:26:38,046: Epoch 2 average loss: avg_loss: 0.19512, avg_total_loss: 0.19512
+2024-08-19 17:27:32,615: Epoch 3 average loss: avg_loss: 0.17319, avg_total_loss: 0.17319
+2024-08-19 17:27:33,814: Epoch 3 average validation loss: 0.07150 -- Median validation metrics: avg_loss: 0.07150, NSE: 0.77632
+2024-08-19 17:28:24,180: Epoch 4 average loss: avg_loss: 0.14884, avg_total_loss: 0.14884
+2024-08-19 17:29:16,519: Epoch 5 average loss: avg_loss: 0.12841, avg_total_loss: 0.12841
+2024-08-19 17:30:10,662: Epoch 6 average loss: avg_loss: 0.12249, avg_total_loss: 0.12249
+2024-08-19 17:30:11,373: Epoch 6 average validation loss: 0.06461 -- Median validation metrics: avg_loss: 0.06461, NSE: 0.80369
+2024-08-19 17:31:04,267: Epoch 7 average loss: avg_loss: 0.11970, avg_total_loss: 0.11970
+2024-08-19 17:32:04,763: Epoch 8 average loss: avg_loss: 0.12286, avg_total_loss: 0.12286
+2024-08-19 17:32:58,487: Epoch 9 average loss: avg_loss: 0.11461, avg_total_loss: 0.11461
+2024-08-19 17:32:59,338: Epoch 9 average validation loss: 0.14659 -- Median validation metrics: avg_loss: 0.14659, NSE: 0.72848
+2024-08-19 17:33:54,752: Epoch 10 average loss: avg_loss: 0.11721, avg_total_loss: 0.11721
+2024-08-19 17:34:48,694: Epoch 11 average loss: avg_loss: 0.10802, avg_total_loss: 0.10802
+2024-08-19 17:35:41,512: Epoch 12 average loss: avg_loss: 0.10739, avg_total_loss: 0.10739
+2024-08-19 17:35:42,359: Epoch 12 average validation loss: 0.06817 -- Median validation metrics: avg_loss: 0.06817, NSE: 0.78654
+2024-08-19 17:36:31,555: Epoch 13 average loss: avg_loss: 0.11171, avg_total_loss: 0.11171
+2024-08-19 17:37:23,339: Epoch 14 average loss: avg_loss: 0.10751, avg_total_loss: 0.10751
+2024-08-19 17:38:15,668: Epoch 15 average loss: avg_loss: 0.10719, avg_total_loss: 0.10719
+2024-08-19 17:38:16,299: Epoch 15 average validation loss: 0.13413 -- Median validation metrics: avg_loss: 0.13413, NSE: 0.74548
+2024-08-19 17:39:06,500: Epoch 16 average loss: avg_loss: 0.10336, avg_total_loss: 0.10336
+2024-08-19 17:39:58,367: Epoch 17 average loss: avg_loss: 0.10118, avg_total_loss: 0.10118
+2024-08-19 17:40:51,493: Epoch 18 average loss: avg_loss: 0.09789, avg_total_loss: 0.09789
+2024-08-19 17:40:52,151: Epoch 18 average validation loss: 0.14398 -- Median validation metrics: avg_loss: 0.14398, NSE: 0.73215
+2024-08-19 17:41:40,339: Epoch 19 average loss: avg_loss: 0.09217, avg_total_loss: 0.09217
+2024-08-19 17:42:34,146: Epoch 20 average loss: avg_loss: 0.09251, avg_total_loss: 0.09251
+2024-08-19 17:43:26,418: Epoch 21 average loss: avg_loss: 0.08896, avg_total_loss: 0.08896
+2024-08-19 17:43:27,132: Epoch 21 average validation loss: 0.13858 -- Median validation metrics: avg_loss: 0.13858, NSE: 0.73476
+2024-08-19 17:44:21,574: Epoch 22 average loss: avg_loss: 0.08554, avg_total_loss: 0.08554
+2024-08-19 17:45:11,953: Epoch 23 average loss: avg_loss: 0.08206, avg_total_loss: 0.08206
+2024-08-19 17:46:05,332: Epoch 24 average loss: avg_loss: 0.09109, avg_total_loss: 0.09109
+2024-08-19 17:46:06,013: Epoch 24 average validation loss: 0.08128 -- Median validation metrics: avg_loss: 0.08128, NSE: 0.74977
+2024-08-19 17:46:56,354: Epoch 25 average loss: avg_loss: 0.08493, avg_total_loss: 0.08493
+2024-08-19 17:47:46,739: Epoch 26 average loss: avg_loss: 0.08496, avg_total_loss: 0.08496
+2024-08-19 17:48:40,227: Epoch 27 average loss: avg_loss: 0.08117, avg_total_loss: 0.08117
+2024-08-19 17:48:40,931: Epoch 27 average validation loss: 0.05061 -- Median validation metrics: avg_loss: 0.05061, NSE: 0.84299
+2024-08-19 17:49:34,785: Epoch 28 average loss: avg_loss: 0.08461, avg_total_loss: 0.08461
+2024-08-19 17:50:29,072: Epoch 29 average loss: avg_loss: 0.08680, avg_total_loss: 0.08680
+2024-08-19 17:50:29,106: Setting learning rate to 0.005
+2024-08-19 17:51:23,431: Epoch 30 average loss: avg_loss: 0.07424, avg_total_loss: 0.07424
+2024-08-19 17:51:24,123: Epoch 30 average validation loss: 0.12519 -- Median validation metrics: avg_loss: 0.12519, NSE: 0.75522
+2024-08-19 17:52:18,131: Using the model weights from S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449\model_epoch030.pt
+2024-08-19 17:52:20,429: Stored metrics at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449\test\model_epoch030\test_metrics.csv
+2024-08-19 17:52:20,446: Stored results at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_172449\test\model_epoch030\test_results.p

@@ -1,0 +1,57 @@
+2024-08-19 17:15:39,596: Logging to S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539\output.log initialized.
+2024-08-19 17:15:39,598: ### Folder structure created at S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539
+2024-08-19 17:15:39,599: ### Run configurations for test_run2
+2024-08-19 17:15:39,600: experiment_name: test_run2
+2024-08-19 17:15:39,601: train_basin_file: 1_basin.txt
+2024-08-19 17:15:39,602: validation_basin_file: 1_basin.txt
+2024-08-19 17:15:39,603: test_basin_file: 1_basin.txt
+2024-08-19 17:15:39,605: train_start_date: 1999-10-01 00:00:00
+2024-08-19 17:15:39,606: train_end_date: 2008-09-30 00:00:00
+2024-08-19 17:15:39,607: validation_start_date: 1980-10-01 00:00:00
+2024-08-19 17:15:39,608: validation_end_date: 1989-09-30 00:00:00
+2024-08-19 17:15:39,609: test_start_date: 1989-10-01 00:00:00
+2024-08-19 17:15:39,610: test_end_date: 1999-09-30 00:00:00
+2024-08-19 17:15:39,611: device: cpu
+2024-08-19 17:15:39,612: validate_every: 3
+2024-08-19 17:15:39,614: validate_n_random_basins: 1
+2024-08-19 17:15:39,615: metrics: ['NSE']
+2024-08-19 17:15:39,616: model: cudalstm
+2024-08-19 17:15:39,617: head: regression
+2024-08-19 17:15:39,618: output_activation: linear
+2024-08-19 17:15:39,619: hidden_size: 20
+2024-08-19 17:15:39,621: initial_forget_bias: 3
+2024-08-19 17:15:39,622: output_dropout: 0.4
+2024-08-19 17:15:39,623: optimizer: Adam
+2024-08-19 17:15:39,624: loss: MSE
+2024-08-19 17:15:39,625: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2024-08-19 17:15:39,626: batch_size: 256
+2024-08-19 17:15:39,626: epochs: 50
+2024-08-19 17:15:39,627: clip_gradient_norm: 1
+2024-08-19 17:15:39,628: predict_last_n: 1
+2024-08-19 17:15:39,629: seq_length: 365
+2024-08-19 17:15:39,630: num_workers: 8
+2024-08-19 17:15:39,632: log_interval: 5
+2024-08-19 17:15:39,633: log_tensorboard: True
+2024-08-19 17:15:39,633: log_n_figures: 1
+2024-08-19 17:15:39,634: save_weights_every: 1
+2024-08-19 17:15:39,635: dataset: camels_us
+2024-08-19 17:15:39,636: data_dir: C:\Data\CAMELS_US
+2024-08-19 17:15:39,637: forcings: ['maurer', 'daymet', 'nldas']
+2024-08-19 17:15:39,638: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2024-08-19 17:15:39,638: target_variables: ['QObs(mm/d)']
+2024-08-19 17:15:39,639: clip_targets_to_zero: ['QObs(mm/d)']
+2024-08-19 17:15:39,640: number_of_basins: 1
+2024-08-19 17:15:39,641: run_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539
+2024-08-19 17:15:39,643: train_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539\train_data
+2024-08-19 17:15:39,644: img_log_dir: S:\hydrolab\home\Omri_Porat\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\T1\runs\test_run2_1908_171539\img_log
+2024-08-19 17:15:39,736: ### Device cpu will be used for training
+2024-08-19 17:15:39,739: Loading basin data into xarray data set.
+2024-08-19 17:15:40,004: Create lookup table and convert to pytorch tensor
+2024-08-19 17:16:33,534: Epoch 1 average loss: avg_loss: 0.39252, avg_total_loss: 0.39252
+2024-08-19 17:17:25,713: Epoch 2 average loss: avg_loss: 0.24965, avg_total_loss: 0.24965
+2024-08-19 17:18:16,545: Epoch 3 average loss: avg_loss: 0.20085, avg_total_loss: 0.20085
+2024-08-19 17:18:18,036: Epoch 3 average validation loss: 0.15079 -- Median validation metrics: avg_loss: 0.15079, NSE: 0.65869
+2024-08-19 17:19:08,341: Epoch 4 average loss: avg_loss: 0.15785, avg_total_loss: 0.15785
+2024-08-19 17:19:59,702: Epoch 5 average loss: avg_loss: 0.14007, avg_total_loss: 0.14007
+2024-08-19 17:20:54,300: Epoch 6 average loss: avg_loss: 0.11840, avg_total_loss: 0.11840
+2024-08-19 17:20:55,115: Epoch 6 average validation loss: 0.12820 -- Median validation metrics: avg_loss: 0.12820, NSE: 0.70477

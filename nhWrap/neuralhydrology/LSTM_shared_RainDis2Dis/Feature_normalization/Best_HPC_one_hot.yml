@@ -1,0 +1,68 @@
+autoregressive_inputs:
+- Flow_m3_sec_shift18
+batch_size: 2048
+clip_gradient_norm: 1
+clip_targets_to_zero:
+- Flow_m3_sec
+data_dir: ..\..\..\..\data\Caravan
+dataset: caravan
+device: cpu
+dynamic_inputs:
+- Rain_gauge_1
+- Rain_gauge_2
+- Rain_gauge_3
+epochs: 15
+experiment_name: hidden_size64_seq_length36_learning_rate0001_one_hot
+forcings:
+- il
+head: regression
+hidden_size: 64
+initial_forget_bias: 3
+lagged_features:
+  Flow_m3_sec:
+  - 18
+  Rain_gauge_1:
+  - 18
+  Rain_gauge_2:
+  - 18
+  Rain_gauge_3:
+  - 18
+learning_rate: 0.001
+log_interval: 5
+log_n_figures: 8
+log_tensorboard: true
+loss: MSE
+metrics:
+- NSE
+model: arlstm
+num_workers: 0
+optimizer: Adam
+output_activation: linear
+output_dropout: 0.4
+predict_last_n: 1
+save_weights_every: 1
+seq_length: 36
+target_variables:
+- Flow_m3_sec
+test_basin_file: LSTM_shared_8basins.txt
+test_end_date: 28/05/2018
+test_start_date: 01/10/2017
+train_basin_file: LSTM_shared_8basins.txt
+train_end_date:
+- 30/05/2011
+- 30/05/2012
+- 30/05/2013
+- 30/05/2014
+- 30/05/2015
+train_start_date:
+- 07/10/2010
+- 07/10/2011
+- 07/10/2012
+- 07/10/2013
+- 07/10/2014
+validate_every: 1
+validate_n_random_basins: 0
+validation_basin_file: LSTM_shared_8basins.txt
+validation_end_date: 30/05/2017
+validation_start_date: 01/10/2015
+use_basin_id_encoding: true
