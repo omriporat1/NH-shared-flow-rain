@@ -1,0 +1,35 @@
+name: neuralhydrology_cpu_gpu
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+dependencies:
+  - bokeh
+  - h5py
+  - hdf5
+  - jupyter
+  - matplotlib
+  - netcdf4
+  - numba
+  - pandas
+  - pip
+  - pytest
+  - pytest-cov
+  - python=3.10
+  - pytorch
+  - ruamel.yaml
+  - scipy
+  - sphinx
+  - tqdm
+  - xarray
+  - yapf
+  - pip:
+    - tensorboard
+    - sphinx-rtd-theme
+    - nbsphinx
+    - nbsphinx-link
+  # CPU-only dependency
+  - cpuonly # Will ensure CPU-only PyTorch if no GPUs are available
+  # GPU dependencies (conditional use)
+  - pytorch-cuda=11.8  # Required for GPU support
