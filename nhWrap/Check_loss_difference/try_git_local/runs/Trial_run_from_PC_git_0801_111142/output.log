@@ -1,0 +1,63 @@
+2025-01-08 11:11:42,044: Logging to C:\PhD\Python\NH-shared-flow-rain\nhWrap\Check_loss_difference\try_git_local\runs\Trial_run_from_PC_git_0801_111142\output.log initialized.
+2025-01-08 11:11:42,044: ### Folder structure created at C:\PhD\Python\NH-shared-flow-rain\nhWrap\Check_loss_difference\try_git_local\runs\Trial_run_from_PC_git_0801_111142
+2025-01-08 11:11:42,044: ### Run configurations for Trial_run_from_PC_git
+2025-01-08 11:11:42,044: autoregressive_inputs: ['Flow_m3_sec_zscore_norm_shift18']
+2025-01-08 11:11:42,044: batch_size: 2048
+2025-01-08 11:11:42,044: clip_gradient_norm: 1
+2025-01-08 11:11:42,045: clip_targets_to_zero: ['Flow_m3_sec_zscore_norm']
+2025-01-08 11:11:42,045: data_dir: ..\..\..\..\..\data\Caravan
+2025-01-08 11:11:42,045: dataset: caravan
+2025-01-08 11:11:42,045: device: cpu
+2025-01-08 11:11:42,045: dynamic_inputs: ['Rain_gauge_1_zscore_norm', 'Rain_gauge_2_zscore_norm', 'Rain_gauge_3_zscore_norm']
+2025-01-08 11:11:42,045: epochs: 5
+2025-01-08 11:11:42,046: experiment_name: Trial_run_from_PC_git
+2025-01-08 11:11:42,046: forcings: ['il']
+2025-01-08 11:11:42,046: head: regression
+2025-01-08 11:11:42,046: hidden_size: 64
+2025-01-08 11:11:42,046: initial_forget_bias: 3
+2025-01-08 11:11:42,046: lagged_features: {'Flow_m3_sec_zscore_norm': [18], 'Rain_gauge_1_zscore_norm': [18], 'Rain_gauge_2_zscore_norm': [18], 'Rain_gauge_3_zscore_norm': [18]}
+2025-01-08 11:11:42,046: learning_rate: 0.001
+2025-01-08 11:11:42,046: log_interval: 1
+2025-01-08 11:11:42,046: log_n_figures: 8
+2025-01-08 11:11:42,046: log_tensorboard: True
+2025-01-08 11:11:42,046: loss: MSE
+2025-01-08 11:11:42,046: metrics: ['MSE', 'NSE']
+2025-01-08 11:11:42,046: model: arlstm
+2025-01-08 11:11:42,047: num_workers: 0
+2025-01-08 11:11:42,047: optimizer: Adam
+2025-01-08 11:11:42,047: output_activation: linear
+2025-01-08 11:11:42,047: output_dropout: 0
+2025-01-08 11:11:42,047: predict_last_n: 1
+2025-01-08 11:11:42,047: save_weights_every: 1
+2025-01-08 11:11:42,047: seq_length: 36
+2025-01-08 11:11:42,047: target_variables: ['Flow_m3_sec_zscore_norm']
+2025-01-08 11:11:42,047: test_basin_file: ..\..\General_configurations\LSTM_shared_8basins.txt
+2025-01-08 11:11:42,047: test_end_date: 2018-05-30 00:00:00
+2025-01-08 11:11:42,047: test_start_date: 2017-10-01 00:00:00
+2025-01-08 11:11:42,047: train_basin_file: ..\..\General_configurations\LSTM_shared_8basins.txt
+2025-01-08 11:11:42,048: train_end_date: [Timestamp('2011-05-30 00:00:00'), Timestamp('2012-05-30 00:00:00')]
+2025-01-08 11:11:42,048: train_start_date: [Timestamp('2010-10-01 00:00:00'), Timestamp('2011-10-01 00:00:00')]
+2025-01-08 11:11:42,048: use_basin_id_encoding: False
+2025-01-08 11:11:42,048: validate_every: 1
+2025-01-08 11:11:42,048: validate_n_random_basins: 0
+2025-01-08 11:11:42,048: validation_basin_file: ..\..\General_configurations\LSTM_shared_8basins.txt
+2025-01-08 11:11:42,048: validation_end_date: 2017-05-30 00:00:00
+2025-01-08 11:11:42,048: validation_start_date: 2016-10-01 00:00:00
+2025-01-08 11:11:42,048: number_of_basins: 8
+2025-01-08 11:11:42,048: run_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\Check_loss_difference\try_git_local\runs\Trial_run_from_PC_git_0801_111142
+2025-01-08 11:11:42,048: train_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\Check_loss_difference\try_git_local\runs\Trial_run_from_PC_git_0801_111142\train_data
+2025-01-08 11:11:42,049: img_log_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\Check_loss_difference\try_git_local\runs\Trial_run_from_PC_git_0801_111142\img_log
+2025-01-08 11:11:42,228: ### Device cpu will be used for training
+2025-01-08 11:11:45,549: Loading basin data into xarray data set.
+2025-01-08 11:11:48,923: Create lookup table and convert to pytorch tensor
+2025-01-08 11:11:55,288: Validation set to validate every 1 epoch(s), but 'validate_n_random_basins' not set or set to zero. Will validate on the entire validation set.
+2025-01-08 11:12:34,926: Epoch 1 average loss: avg_loss: 0.23129, avg_total_loss: 0.23129
+2025-01-08 11:12:51,804: Epoch 1 average validation loss: 0.04953 -- Median validation metrics: avg_loss: 0.04953, MSE: 0.01643, NSE: -35993147146239.13281
+2025-01-08 11:13:34,467: Epoch 2 average loss: avg_loss: 0.15038, avg_total_loss: 0.15038
+2025-01-08 11:13:46,819: Epoch 2 average validation loss: 0.04633 -- Median validation metrics: avg_loss: 0.04633, MSE: 0.01386, NSE: -35.65149
+2025-01-08 11:14:29,301: Epoch 3 average loss: avg_loss: 0.12932, avg_total_loss: 0.12932
+2025-01-08 11:14:41,713: Epoch 3 average validation loss: 0.04969 -- Median validation metrics: avg_loss: 0.04969, MSE: 0.05410, NSE: -2.42620
+2025-01-08 11:15:23,951: Epoch 4 average loss: avg_loss: 0.11495, avg_total_loss: 0.11495
+2025-01-08 11:15:37,302: Epoch 4 average validation loss: 0.05300 -- Median validation metrics: avg_loss: 0.05300, MSE: 0.01051, NSE: -3.82318
+2025-01-08 11:16:19,084: Epoch 5 average loss: avg_loss: 0.10027, avg_total_loss: 0.10027
+2025-01-08 11:16:31,153: Epoch 5 average validation loss: 0.05448 -- Median validation metrics: avg_loss: 0.05448, MSE: 0.26859, NSE: 0.80788
