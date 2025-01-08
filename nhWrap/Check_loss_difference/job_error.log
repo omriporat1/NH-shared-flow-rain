@@ -1,0 +1,5 @@
+/var/spool/slurmd/job25744010/slurm_script: line 9: cd: sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/Check_loss_difference: No such file or directory
+Traceback (most recent call last):
+  File "/sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/Check_loss_difference/check_loss_difference.py", line 3, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
