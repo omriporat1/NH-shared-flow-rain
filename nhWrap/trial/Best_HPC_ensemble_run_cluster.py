@@ -15,7 +15,7 @@ def main():
     run_folder = Path("Best_HPC_ensemble_run")
     num_runs_ensemble = 5
     # iterate runs for each config file in the folder:
-    for config_file in run_folder.glob("*.yml"):
+    for config_file in run_folder.glob("config_9.yml"):
         for num_runs_ensemble in range(num_runs_ensemble):
             run_config = Config(config_file)
 
