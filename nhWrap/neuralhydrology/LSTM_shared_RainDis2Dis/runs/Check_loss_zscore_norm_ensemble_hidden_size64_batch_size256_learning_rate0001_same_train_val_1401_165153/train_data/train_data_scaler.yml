@@ -1,0 +1,50 @@
+xarray_feature_scale:
+  coords: {}
+  attrs: {}
+  dims: {}
+  data_vars:
+    Flow_m3_sec_zscore_norm:
+      dims: []
+      attrs: {}
+      data: 0.7566927075386047
+    Flow_m3_sec_zscore_norm_shift18:
+      dims: []
+      attrs: {}
+      data: 0.7567156553268433
+    Rain_gauge_1_zscore_norm:
+      dims: []
+      attrs: {}
+      data: 11.260767936706543
+    Rain_gauge_2_zscore_norm:
+      dims: []
+      attrs: {}
+      data: 0.7998051643371582
+    Rain_gauge_3_zscore_norm:
+      dims: []
+      attrs: {}
+      data: 0.8452369570732117
+xarray_feature_center:
+  coords: {}
+  attrs: {}
+  dims: {}
+  data_vars:
+    Flow_m3_sec_zscore_norm:
+      dims: []
+      attrs: {}
+      data: -0.04333449900150299
+    Flow_m3_sec_zscore_norm_shift18:
+      dims: []
+      attrs: {}
+      data: -0.043330542743206024
+    Rain_gauge_1_zscore_norm:
+      dims: []
+      attrs: {}
+      data: 0.0234404094517231
+    Rain_gauge_2_zscore_norm:
+      dims: []
+      attrs: {}
+      data: -0.035607192665338516
+    Rain_gauge_3_zscore_norm:
+      dims: []
+      attrs: {}
+      data: -0.028700169175863266

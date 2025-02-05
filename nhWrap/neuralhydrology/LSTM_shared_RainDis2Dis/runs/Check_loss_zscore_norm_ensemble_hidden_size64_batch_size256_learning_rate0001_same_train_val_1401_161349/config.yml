@@ -1,0 +1,68 @@
+autoregressive_inputs:
+- Flow_m3_sec_zscore_norm_shift18
+batch_size: 512
+clip_gradient_norm: 1
+clip_targets_to_zero:
+- Flow_m3_sec_zscore_norm
+commit_hash:
+data_dir: ..\..\..\..\..\data\Caravan
+dataset: caravan
+device: cpu
+dynamic_inputs:
+- Rain_gauge_1_zscore_norm
+- Rain_gauge_2_zscore_norm
+- Rain_gauge_3_zscore_norm
+epochs: 2
+experiment_name: Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val
+forcings:
+- il
+head: regression
+hidden_size: 64
+img_log_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_161349\img_log
+initial_forget_bias: 3
+lagged_features:
+  Flow_m3_sec_zscore_norm:
+  - 18
+  Rain_gauge_1_zscore_norm:
+  - 18
+  Rain_gauge_2_zscore_norm:
+  - 18
+  Rain_gauge_3_zscore_norm:
+  - 18
+learning_rate: 0.001
+log_interval: 1
+log_n_figures: 8
+log_tensorboard: true
+loss: MSE
+metrics:
+- MSE
+- NSE
+model: arlstm
+num_workers: 0
+number_of_basins: 8
+optimizer: Adam
+output_activation: linear
+output_dropout: 0
+package_version: 1.11.0
+predict_last_n: 1
+run_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_161349
+save_weights_every: 1
+seed: 633393
+seq_length: 36
+target_variables:
+- Flow_m3_sec_zscore_norm
+test_basin_file: LSTM_shared_8basins.txt
+test_end_date: 30/05/2018
+test_start_date: 01/10/2017
+train_basin_file: LSTM_shared_8basins.txt
+train_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_161349\train_data
+train_end_date:
+- 30/05/2017
+train_start_date:
+- 01/10/2016
+use_basin_id_encoding: false
+validate_every: 1
+validate_n_random_basins: 0
+validation_basin_file: LSTM_shared_8basins.txt
+validation_end_date: 30/05/2017
+validation_start_date: 01/10/2016

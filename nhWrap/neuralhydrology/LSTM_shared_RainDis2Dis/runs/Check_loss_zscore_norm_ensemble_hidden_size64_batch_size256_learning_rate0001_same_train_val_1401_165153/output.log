@@ -1,0 +1,53 @@
+2025-01-14 16:51:53,526: Logging to C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_165153\output.log initialized.
+2025-01-14 16:51:53,526: ### Folder structure created at C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_165153
+2025-01-14 16:51:53,526: ### Run configurations for Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val
+2025-01-14 16:51:53,526: autoregressive_inputs: ['Flow_m3_sec_zscore_norm_shift18']
+2025-01-14 16:51:53,526: batch_size: 512
+2025-01-14 16:51:53,526: clip_gradient_norm: 1
+2025-01-14 16:51:53,526: clip_targets_to_zero: ['Flow_m3_sec_zscore_norm']
+2025-01-14 16:51:53,526: data_dir: ..\..\..\..\..\data\Caravan
+2025-01-14 16:51:53,526: dataset: caravan
+2025-01-14 16:51:53,526: device: cpu
+2025-01-14 16:51:53,526: dynamic_inputs: ['Rain_gauge_1_zscore_norm', 'Rain_gauge_2_zscore_norm', 'Rain_gauge_3_zscore_norm']
+2025-01-14 16:51:53,526: epochs: 5
+2025-01-14 16:51:53,526: experiment_name: Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val
+2025-01-14 16:51:53,527: forcings: ['il']
+2025-01-14 16:51:53,527: head: regression
+2025-01-14 16:51:53,527: hidden_size: 64
+2025-01-14 16:51:53,527: initial_forget_bias: 3
+2025-01-14 16:51:53,527: lagged_features: {'Flow_m3_sec_zscore_norm': [18], 'Rain_gauge_1_zscore_norm': [18], 'Rain_gauge_2_zscore_norm': [18], 'Rain_gauge_3_zscore_norm': [18]}
+2025-01-14 16:51:53,527: learning_rate: 0.001
+2025-01-14 16:51:53,527: log_interval: 1
+2025-01-14 16:51:53,527: log_n_figures: 8
+2025-01-14 16:51:53,527: log_tensorboard: True
+2025-01-14 16:51:53,527: loss: MSE
+2025-01-14 16:51:53,527: metrics: ['MSE', 'NSE']
+2025-01-14 16:51:53,527: model: arlstm
+2025-01-14 16:51:53,527: num_workers: 0
+2025-01-14 16:51:53,527: optimizer: Adam
+2025-01-14 16:51:53,527: output_activation: linear
+2025-01-14 16:51:53,527: output_dropout: 0
+2025-01-14 16:51:53,527: predict_last_n: 1
+2025-01-14 16:51:53,527: save_weights_every: 1
+2025-01-14 16:51:53,527: seq_length: 36
+2025-01-14 16:51:53,527: target_variables: ['Flow_m3_sec_zscore_norm']
+2025-01-14 16:51:53,527: test_basin_file: LSTM_shared_1basin.txt
+2025-01-14 16:51:53,527: test_end_date: 2018-05-30 00:00:00
+2025-01-14 16:51:53,527: test_start_date: 2017-10-01 00:00:00
+2025-01-14 16:51:53,527: train_basin_file: LSTM_shared_1basin.txt
+2025-01-14 16:51:53,527: train_end_date: [Timestamp('2016-05-30 00:00:00')]
+2025-01-14 16:51:53,527: train_start_date: [Timestamp('2010-10-01 00:00:00')]
+2025-01-14 16:51:53,527: use_basin_id_encoding: False
+2025-01-14 16:51:53,527: validate_every: 1
+2025-01-14 16:51:53,527: validate_n_random_basins: 0
+2025-01-14 16:51:53,527: validation_basin_file: LSTM_shared_1basin.txt
+2025-01-14 16:51:53,527: validation_end_date: 2018-05-30 00:00:00
+2025-01-14 16:51:53,528: validation_start_date: 2017-10-01 00:00:00
+2025-01-14 16:51:53,528: number_of_basins: 1
+2025-01-14 16:51:53,528: run_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_165153
+2025-01-14 16:51:53,528: train_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_165153\train_data
+2025-01-14 16:51:53,528: img_log_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_165153\img_log
+2025-01-14 16:51:53,574: ### Device cpu will be used for training
+2025-01-14 16:51:53,574: Loading basin data into xarray data set.
+2025-01-14 16:51:54,035: Create lookup table and convert to pytorch tensor
+2025-01-14 16:51:57,017: Validation set to validate every 1 epoch(s), but 'validate_n_random_basins' not set or set to zero. Will validate on the entire validation set.

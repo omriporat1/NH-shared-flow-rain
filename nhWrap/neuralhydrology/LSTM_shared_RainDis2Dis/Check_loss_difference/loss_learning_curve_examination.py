@@ -110,8 +110,8 @@ def process_tensorboard_folders(folders):
 def main():
     # List of directories containing TensorBoard logs
     log_folders = [
-        r"C:\PhD\Python\neuralhydrology-neuralhydrology-e4329c3\neuralhydrology\LSTM_shared_RainDis2Dis\runs"
-        r"\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_0501_150610"
+        r"C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs"
+        r"\Check_loss_zscore_norm_ensemble_hidden_size64_batch_size256_learning_rate0001_same_train_val_1401_170103"
     ]
     process_tensorboard_folders(log_folders)
 
