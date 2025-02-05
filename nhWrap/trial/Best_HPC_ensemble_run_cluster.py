@@ -12,7 +12,7 @@ from neuralhydrology.utils.config import Config
 
 def main():
 
-    run_folder = Path("../neuralhydrology/LSTM_shared_RainDis2Dis/Best_HPC_ensemble_run")
+    run_folder = Path("Best_HPC_ensemble_run")
     num_runs_ensemble = 5
     # iterate runs for each config file in the folder:
     for config_file in run_folder.glob("*.yml"):

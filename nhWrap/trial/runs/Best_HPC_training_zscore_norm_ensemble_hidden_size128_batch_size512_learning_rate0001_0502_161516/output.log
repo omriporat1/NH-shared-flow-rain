@@ -1,0 +1,80 @@
+2025-02-05 16:15:16,855: Logging to /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/runs/Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001_0502_161516/output.log initialized.
+2025-02-05 16:15:16,856: ### Folder structure created at /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/runs/Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001_0502_161516
+2025-02-05 16:15:16,856: ### Run configurations for Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001
+2025-02-05 16:15:16,856: autoregressive_inputs: ['Flow_m3_sec_zscore_norm_shift18']
+2025-02-05 16:15:16,856: batch_size: 512
+2025-02-05 16:15:16,856: clip_gradient_norm: 1
+2025-02-05 16:15:16,856: clip_targets_to_zero: ['Flow_m3_sec_zscore_norm']
+2025-02-05 16:15:16,856: data_dir: ..\..\..\..\data\Caravan
+2025-02-05 16:15:16,856: dataset: caravan
+2025-02-05 16:15:16,856: device: cpu
+2025-02-05 16:15:16,856: dynamic_inputs: ['Rain_gauge_1_zscore_norm', 'Rain_gauge_2_zscore_norm', 'Rain_gauge_3_zscore_norm']
+2025-02-05 16:15:16,856: epochs: 15
+2025-02-05 16:15:16,856: experiment_name: Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001
+2025-02-05 16:15:16,856: forcings: ['il']
+2025-02-05 16:15:16,857: head: regression
+2025-02-05 16:15:16,857: hidden_size: 128
+2025-02-05 16:15:16,857: initial_forget_bias: 3
+2025-02-05 16:15:16,857: lagged_features: {'Flow_m3_sec_zscore_norm': [18], 'Rain_gauge_1_zscore_norm': [18], 'Rain_gauge_2_zscore_norm': [18], 'Rain_gauge_3_zscore_norm': [18]}
+2025-02-05 16:15:16,857: learning_rate: 0.001
+2025-02-05 16:15:16,857: log_interval: 5
+2025-02-05 16:15:16,857: log_n_figures: 8
+2025-02-05 16:15:16,857: log_tensorboard: True
+2025-02-05 16:15:16,857: loss: MSE
+2025-02-05 16:15:16,857: metrics: ['NSE']
+2025-02-05 16:15:16,857: model: arlstm
+2025-02-05 16:15:16,857: num_workers: 0
+2025-02-05 16:15:16,857: optimizer: Adam
+2025-02-05 16:15:16,857: output_activation: linear
+2025-02-05 16:15:16,857: output_dropout: 0.4
+2025-02-05 16:15:16,857: predict_last_n: 1
+2025-02-05 16:15:16,857: save_weights_every: 1
+2025-02-05 16:15:16,858: seq_length: 36
+2025-02-05 16:15:16,858: target_variables: ['Flow_m3_sec_zscore_norm']
+2025-02-05 16:15:16,858: test_basin_file: LSTM_shared_8basins.txt
+2025-02-05 16:15:16,858: test_end_date: 2018-05-28 00:00:00
+2025-02-05 16:15:16,858: test_start_date: 2017-10-01 00:00:00
+2025-02-05 16:15:16,858: train_basin_file: LSTM_shared_8basins.txt
+2025-02-05 16:15:16,858: train_end_date: [Timestamp('2011-05-30 00:00:00'), Timestamp('2012-05-30 00:00:00'), Timestamp('2013-05-30 00:00:00'), Timestamp('2014-05-30 00:00:00'), Timestamp('2015-05-30 00:00:00')]
+2025-02-05 16:15:16,858: train_start_date: [Timestamp('2010-10-07 00:00:00'), Timestamp('2011-10-07 00:00:00'), Timestamp('2012-10-07 00:00:00'), Timestamp('2013-10-07 00:00:00'), Timestamp('2014-10-07 00:00:00')]
+2025-02-05 16:15:16,858: use_basin_id_encoding: False
+2025-02-05 16:15:16,859: validate_every: 1
+2025-02-05 16:15:16,859: validate_n_random_basins: 0
+2025-02-05 16:15:16,859: validation_basin_file: LSTM_shared_8basins.txt
+2025-02-05 16:15:16,859: validation_end_date: 2017-05-30 00:00:00
+2025-02-05 16:15:16,859: validation_start_date: 2015-10-01 00:00:00
+2025-02-05 16:15:16,859: number_of_basins: 8
+2025-02-05 16:15:16,859: run_dir: /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/runs/Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001_0502_161516
+2025-02-05 16:15:16,859: train_dir: /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/runs/Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001_0502_161516/train_data
+2025-02-05 16:15:16,859: img_log_dir: /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/runs/Best_HPC_training_zscore_norm_ensemble_hidden_size128_batch_size512_learning_rate0001_0502_161516/img_log
+2025-02-05 16:15:17,038: ### Device cpu will be used for training
+2025-02-05 16:15:17,039: Loading basin data into xarray data set.
+2025-02-05 16:15:17,106: Uncaught exception
+Traceback (most recent call last):
+  File "/sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/Best_HPC_ensemble_run_cluster.py", line 35, in <module>
+    main()
+  File "/sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/Best_HPC_ensemble_run_cluster.py", line 30, in main
+    start_run(config_file=config_file,
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/nh_run.py", line 76, in start_run
+    start_training(config)
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/training/train.py", line 19, in start_training
+    trainer.initialize_training()
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/training/basetrainer.py", line 147, in initialize_training
+    ds = self._get_dataset()
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/training/basetrainer.py", line 80, in _get_dataset
+    return get_dataset(cfg=self.cfg, period="train", is_train=True, scaler=self._scaler)
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/__init__.py", line 83, in get_dataset
+    ds = Dataset(cfg=cfg,
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/caravan.py", line 56, in __init__
+    super(Caravan, self).__init__(cfg=cfg,
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/basedataset.py", line 146, in __init__
+    self._load_data()
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/basedataset.py", line 720, in _load_data
+    xr = self._load_or_create_xarray_dataset()
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/basedataset.py", line 336, in _load_or_create_xarray_dataset
+    df = self._load_basin_data(basin)
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/caravan.py", line 66, in _load_basin_data
+    return load_caravan_timeseries(data_dir=self.cfg.data_dir, basin=basin)
+  File "/sci/labs/efratmorin/haimasree/neuralhydrology/neuralhydrology/datasetzoo/caravan.py", line 181, in load_caravan_timeseries
+    raise FileNotFoundError(f"No basin file found at {filepath}.")
+FileNotFoundError: No basin file found at ..\..\..\..\data\Caravan/timeseries/netcdf/il/il_14120.nc.
