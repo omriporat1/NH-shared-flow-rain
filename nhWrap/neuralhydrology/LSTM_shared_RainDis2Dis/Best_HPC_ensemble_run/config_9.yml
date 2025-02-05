@@ -7,7 +7,8 @@ clip_targets_to_zero:
 # data_dir: ..\..\..\..\data\Caravan
 data_dir: /sci/labs/efratmorin/omripo/PhD/Data/Caravan/
 dataset: caravan
-device: cpu
+# device: cpu
+device: cuda:0
 dynamic_inputs:
 - Rain_gauge_1_zscore_norm
 - Rain_gauge_2_zscore_norm
