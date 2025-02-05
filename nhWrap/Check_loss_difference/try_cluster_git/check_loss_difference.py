@@ -3,12 +3,12 @@ import pickle
 from pathlib import Path
 import matplotlib.pyplot as plt
 import torch
-# from neuralhydrology.evaluation import metrics, get_tester
-# from neuralhydrology.nh_run import start_run
-# from neuralhydrology.utils.config import Config
-from nhWrap.neuralhydrology.evaluation import metrics, get_tester
-from nhWrap.neuralhydrology.nh_run import start_run
-from nhWrap.neuralhydrology.utils.config import Config
+from neuralhydrology.evaluation import metrics, get_tester
+from neuralhydrology.nh_run import start_run
+from neuralhydrology.utils.config import Config
+# from nhWrap.neuralhydrology.evaluation import metrics, get_tester
+# from nhWrap.neuralhydrology.nh_run import start_run
+# from nhWrap.neuralhydrology.utils.config import Config
 
 import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend

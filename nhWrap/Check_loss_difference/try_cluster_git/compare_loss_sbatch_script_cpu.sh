@@ -2,15 +2,19 @@
 
 #SBATCH --time=05:00:00
 #SBATCH --ntasks=1
-#SBATCH --mem=4G
+#SBATCH --mem=32G
 #SBATCH --output=job_output.log
 #SBATCH --error=job_error.log
 
-cd sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/Check_loss_difference
+source /usr/local/spack/opt/spack/linux-debian12-x86_64/gcc-12.2.0/miniconda3-24.3.0-iqeknetqo7ngpr57d6gmu3dg4rzlcgk6/etc/profile.d/conda.sh
 
-. /sci/labs/efratmorin/omripo/PhD/Python/neuralhydrology-neuralhydrology-e4329c3/NH_env/neuralhydrology/bin/activate
+conda activate /sci/labs/efratmorin/haimasree/condaenvs/neuralhydrology
 
-python /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/Check_loss_difference/check_loss_difference.py
+export PYTHONPATH=/sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/neuralhydrology:$PYTHONPATH
 
-deactivate
+echo "PYTHONPATH is: $PYTHONPATH"
+
+python /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/Check_loss_difference/try_cluster_git/check_loss_difference.py
+
+conda deactivate
 
