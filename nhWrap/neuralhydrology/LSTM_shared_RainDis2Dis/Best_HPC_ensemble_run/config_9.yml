@@ -4,7 +4,8 @@ batch_size: 512
 clip_gradient_norm: 1
 clip_targets_to_zero:
 - Flow_m3_sec_zscore_norm
-data_dir: ..\..\..\..\data\Caravan
+# data_dir: ..\..\..\..\data\Caravan
+data_dir: /sci/labs/efratmorin/omripo/PhD/Data/Caravan/
 dataset: caravan
 device: cpu
 dynamic_inputs:
