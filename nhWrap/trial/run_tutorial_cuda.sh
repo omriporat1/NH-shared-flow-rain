@@ -15,7 +15,7 @@ source /usr/local/spack/opt/spack/linux-debian12-x86_64/gcc-12.2.0/miniconda3-24
 
 conda activate /sci/labs/efratmorin/haimasree/condaenvs/neuralhydrology
 
-python Best_HPC_omri_trial_cluster.py
+python /sci/labs/efratmorin/omripo/PhD/NH-shared-flow-rain/nhWrap/trial/Best_HPC_omri_trial_cluster.py
 
 conda deactivate
 
