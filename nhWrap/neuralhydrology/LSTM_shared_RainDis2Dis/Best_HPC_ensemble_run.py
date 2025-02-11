@@ -13,7 +13,7 @@ from neuralhydrology.utils.config import Config
 def main():
 
     run_folder = Path("Best_HPC_ensemble_run")
-    num_runs_ensemble = 5
+    num_runs_ensemble = 1
     # iterate runs for each config file in the folder:
     for config_file in run_folder.glob("*.yml"):
         for num_runs_ensemble in range(num_runs_ensemble):

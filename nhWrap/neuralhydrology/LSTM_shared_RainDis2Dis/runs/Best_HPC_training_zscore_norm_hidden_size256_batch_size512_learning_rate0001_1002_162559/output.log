@@ -1,0 +1,61 @@
+2025-02-10 16:25:59,645: Logging to C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001_1002_162559\output.log initialized.
+2025-02-10 16:25:59,645: ### Folder structure created at C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001_1002_162559
+2025-02-10 16:25:59,645: ### Run configurations for Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001
+2025-02-10 16:25:59,645: autoregressive_inputs: ['Flow_m3_sec_zscore_norm_shift18']
+2025-02-10 16:25:59,645: batch_size: 512
+2025-02-10 16:25:59,645: clip_gradient_norm: 1
+2025-02-10 16:25:59,645: data_dir: C:\PhD\Data\Caravan
+2025-02-10 16:25:59,645: dataset: caravan
+2025-02-10 16:25:59,645: device: cpu
+2025-02-10 16:25:59,645: dynamic_inputs: ['Rain_gauge_1_zscore_norm', 'Rain_gauge_2_zscore_norm', 'Rain_gauge_3_zscore_norm']
+2025-02-10 16:25:59,645: epochs: 5
+2025-02-10 16:25:59,645: experiment_name: Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001
+2025-02-10 16:25:59,645: forcings: ['il']
+2025-02-10 16:25:59,645: head: regression
+2025-02-10 16:25:59,645: hidden_size: 256
+2025-02-10 16:25:59,645: initial_forget_bias: 3
+2025-02-10 16:25:59,645: lagged_features: {'Flow_m3_sec_zscore_norm': [18], 'Rain_gauge_1_zscore_norm': [18], 'Rain_gauge_2_zscore_norm': [18], 'Rain_gauge_3_zscore_norm': [18]}
+2025-02-10 16:25:59,645: learning_rate: 0.001
+2025-02-10 16:25:59,645: log_interval: 5
+2025-02-10 16:25:59,645: log_n_figures: 8
+2025-02-10 16:25:59,645: log_tensorboard: True
+2025-02-10 16:25:59,645: loss: MSE
+2025-02-10 16:25:59,645: metrics: ['NSE']
+2025-02-10 16:25:59,645: model: arlstm
+2025-02-10 16:25:59,645: num_workers: 0
+2025-02-10 16:25:59,646: optimizer: Adam
+2025-02-10 16:25:59,646: output_activation: linear
+2025-02-10 16:25:59,646: output_dropout: 0.4
+2025-02-10 16:25:59,646: predict_last_n: 1
+2025-02-10 16:25:59,646: save_weights_every: 1
+2025-02-10 16:25:59,646: seq_length: 36
+2025-02-10 16:25:59,646: target_variables: ['Flow_m3_sec_zscore_norm']
+2025-02-10 16:25:59,646: test_basin_file: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\Apply_metrics_to_train_and_validation\LSTM_shared_8basins.txt
+2025-02-10 16:25:59,646: test_end_date: 2018-05-28 00:00:00
+2025-02-10 16:25:59,646: test_start_date: 2017-10-01 00:00:00
+2025-02-10 16:25:59,646: train_basin_file: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\Apply_metrics_to_train_and_validation\LSTM_shared_8basins.txt
+2025-02-10 16:25:59,646: train_end_date: [Timestamp('2015-09-30 00:00:00')]
+2025-02-10 16:25:59,646: train_start_date: [Timestamp('2010-10-01 00:00:00')]
+2025-02-10 16:25:59,646: use_basin_id_encoding: False
+2025-02-10 16:25:59,646: validate_every: 1
+2025-02-10 16:25:59,646: validate_n_random_basins: 8
+2025-02-10 16:25:59,646: validation_basin_file: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\Apply_metrics_to_train_and_validation\LSTM_shared_8basins.txt
+2025-02-10 16:25:59,646: validation_end_date: 2017-09-30 00:00:00
+2025-02-10 16:25:59,646: validation_start_date: 2015-10-01 00:00:00
+2025-02-10 16:25:59,646: number_of_basins: 8
+2025-02-10 16:25:59,646: run_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001_1002_162559
+2025-02-10 16:25:59,646: train_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001_1002_162559\train_data
+2025-02-10 16:25:59,646: img_log_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001_1002_162559\img_log
+2025-02-10 16:25:59,703: ### Device cpu will be used for training
+2025-02-10 16:25:59,703: Loading basin data into xarray data set.
+2025-02-10 16:26:02,362: Create lookup table and convert to pytorch tensor
+2025-02-10 16:38:04,480: Epoch 1 average loss: avg_loss: 0.13248, avg_total_loss: 0.13248
+2025-02-10 16:41:47,668: Epoch 1 average validation loss: 0.01390 -- Median validation metrics: avg_loss: 0.01390, NSE: 0.53496
+2025-02-10 17:04:22,467: Epoch 2 average loss: avg_loss: 0.10819, avg_total_loss: 0.10819
+2025-02-10 17:06:16,323: Epoch 2 average validation loss: 0.01978 -- Median validation metrics: avg_loss: 0.01978, NSE: 0.67861
+2025-02-10 17:18:35,152: Epoch 3 average loss: avg_loss: 0.09785, avg_total_loss: 0.09785
+2025-02-10 17:20:28,618: Epoch 3 average validation loss: 0.01561 -- Median validation metrics: avg_loss: 0.01561, NSE: 0.51581
+2025-02-10 17:32:32,431: Epoch 4 average loss: avg_loss: 0.08277, avg_total_loss: 0.08277
+2025-02-10 17:34:27,589: Epoch 4 average validation loss: 0.01462 -- Median validation metrics: avg_loss: 0.01462, NSE: 0.74642
+2025-02-10 17:46:29,364: Epoch 5 average loss: avg_loss: 0.07263, avg_total_loss: 0.07263
+2025-02-10 17:48:21,178: Epoch 5 average validation loss: 0.01621 -- Median validation metrics: avg_loss: 0.01621, NSE: 0.75217

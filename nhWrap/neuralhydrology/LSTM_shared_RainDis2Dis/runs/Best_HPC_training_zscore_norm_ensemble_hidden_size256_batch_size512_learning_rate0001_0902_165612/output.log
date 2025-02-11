@@ -1,0 +1,51 @@
+2025-02-09 16:56:12,194: Logging to C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001_0902_165612\output.log initialized.
+2025-02-09 16:56:12,194: ### Folder structure created at C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001_0902_165612
+2025-02-09 16:56:12,194: ### Run configurations for Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001
+2025-02-09 16:56:12,194: autoregressive_inputs: ['Flow_m3_sec_zscore_norm_shift18']
+2025-02-09 16:56:12,194: batch_size: 512
+2025-02-09 16:56:12,194: clip_gradient_norm: 1
+2025-02-09 16:56:12,194: clip_targets_to_zero: ['Flow_m3_sec_zscore_norm']
+2025-02-09 16:56:12,195: data_dir: ..\..\..\..\data\Caravan
+2025-02-09 16:56:12,195: dataset: caravan
+2025-02-09 16:56:12,195: device: cpu
+2025-02-09 16:56:12,195: dynamic_inputs: ['Rain_gauge_1_zscore_norm', 'Rain_gauge_2_zscore_norm', 'Rain_gauge_3_zscore_norm']
+2025-02-09 16:56:12,195: epochs: 30
+2025-02-09 16:56:12,195: experiment_name: Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001
+2025-02-09 16:56:12,195: forcings: ['il']
+2025-02-09 16:56:12,195: head: regression
+2025-02-09 16:56:12,195: hidden_size: 256
+2025-02-09 16:56:12,195: initial_forget_bias: 3
+2025-02-09 16:56:12,195: lagged_features: {'Flow_m3_sec_zscore_norm': [18], 'Rain_gauge_1_zscore_norm': [18], 'Rain_gauge_2_zscore_norm': [18], 'Rain_gauge_3_zscore_norm': [18]}
+2025-02-09 16:56:12,195: learning_rate: 0.001
+2025-02-09 16:56:12,195: log_interval: 5
+2025-02-09 16:56:12,196: log_n_figures: 8
+2025-02-09 16:56:12,196: log_tensorboard: True
+2025-02-09 16:56:12,196: loss: MSE
+2025-02-09 16:56:12,196: metrics: ['NSE']
+2025-02-09 16:56:12,196: model: arlstm
+2025-02-09 16:56:12,196: num_workers: 0
+2025-02-09 16:56:12,196: optimizer: Adam
+2025-02-09 16:56:12,196: output_activation: linear
+2025-02-09 16:56:12,196: output_dropout: 0.4
+2025-02-09 16:56:12,196: predict_last_n: 1
+2025-02-09 16:56:12,196: save_weights_every: 1
+2025-02-09 16:56:12,196: seq_length: 36
+2025-02-09 16:56:12,196: target_variables: ['Flow_m3_sec_zscore_norm']
+2025-02-09 16:56:12,196: test_basin_file: LSTM_shared_8basins.txt
+2025-02-09 16:56:12,197: test_end_date: 2018-05-28 00:00:00
+2025-02-09 16:56:12,197: test_start_date: 2017-10-01 00:00:00
+2025-02-09 16:56:12,197: train_basin_file: LSTM_shared_8basins.txt
+2025-02-09 16:56:12,197: train_end_date: [Timestamp('2015-09-30 00:00:00')]
+2025-02-09 16:56:12,197: train_start_date: [Timestamp('2010-10-01 00:00:00')]
+2025-02-09 16:56:12,197: use_basin_id_encoding: False
+2025-02-09 16:56:12,197: validate_every: 1
+2025-02-09 16:56:12,197: validate_n_random_basins: 0
+2025-02-09 16:56:12,197: validation_basin_file: LSTM_shared_8basins.txt
+2025-02-09 16:56:12,198: validation_end_date: 2017-09-30 00:00:00
+2025-02-09 16:56:12,198: validation_start_date: 2015-10-01 00:00:00
+2025-02-09 16:56:12,198: number_of_basins: 8
+2025-02-09 16:56:12,198: run_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001_0902_165612
+2025-02-09 16:56:12,198: train_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001_0902_165612\train_data
+2025-02-09 16:56:12,198: img_log_dir: C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs\Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001_0902_165612\img_log
+2025-02-09 16:56:12,245: ### Device cpu will be used for training
+2025-02-09 16:56:12,246: Loading basin data into xarray data set.
