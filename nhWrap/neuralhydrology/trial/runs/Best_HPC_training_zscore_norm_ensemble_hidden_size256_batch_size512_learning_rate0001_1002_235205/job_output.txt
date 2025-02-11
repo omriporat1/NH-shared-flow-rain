@@ -1,0 +1,5 @@
+       JobID    JobName  Partition      State  AllocTRES    Elapsed     MaxRSS     ReqMem    CPUTime        NodeList 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --------------- 
+27745225     gpuwcuda_+     puffin  COMPLETED billing=4+   00:45:34                  32Gn   00:45:34       puffin-01 
+27745225.ba+      batch             COMPLETED cpu=1,gre+   00:45:34   1836980K       32Gn   00:45:34       puffin-01 
+27745225.ex+     extern             COMPLETED billing=4+   00:45:34       116K       32Gn   00:45:34       puffin-01 
