@@ -18,7 +18,7 @@ from datetime import datetime
 def main():
     run_dir = Path(
         r"C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis\runs"
-        r"\Best_HPC_training_zscore_norm_ensemble_hidden_size256_batch_size512_learning_rate0001_0902_165653")  #
+        r"\Best_HPC_training_zscore_norm_hidden_size256_batch_size512_learning_rate0001_1002_162559")  #
     # you'll find this path in the output of the training above.
     run_config = Config(Path(
         r"C:\PhD\Python\NH-shared-flow-rain\nhWrap\neuralhydrology\LSTM_shared_RainDis2Dis"
